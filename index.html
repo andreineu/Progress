@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="src/index.js" type="module" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Block</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="progress-container">
+        <div id="progress"></div>
+      </div>
+
+      <div class="controls-container">
+        <div class="control">
+          <input
+            type="number"
+            min="0"
+            max="100"
+            class="progress-input"
+            id="progress-value"
+          />
+          <span>Value</span>
+        </div>
+
+        <div class="control">
+          <label class="switch">
+            <input type="checkbox" id="progress-animate" />
+            <span class="slider"></span>
+          </label>
+          <span>Animate</span>
+        </div>
+
+        <div class="control">
+          <label class="switch">
+            <input type="checkbox" id="progress-hide" />
+            <span class="slider"></span>
+          </label>
+          <span>Hide</span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
