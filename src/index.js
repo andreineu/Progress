@@ -6,7 +6,7 @@ const grey = "#eff3f6";
 const container = document.getElementById("progress");
 const progressRing = new ProgressRing(container, {
   radius: 100,
-  strokeWidth: 30,
+  strokeWidth: 20,
   strokeColor: grey,
   fillColor: blue,
 });
